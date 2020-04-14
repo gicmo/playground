@@ -12,4 +12,4 @@ matrix:
 language: generic
 script:
   - cat /proc/self/mountinfo
-  - python3 test.py
+  - strace python3 test.py

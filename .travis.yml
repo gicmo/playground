@@ -7,7 +7,9 @@ addons:
 matrix:
   include:
     - arch: arm64
+    - arch: amd64
 
 language: generic
 script:
+  - cat /proc/self/mountinfo
   - python3 test.py

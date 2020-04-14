@@ -1,0 +1,13 @@
+dist: bionic
+addons:
+  apt:
+    packages:
+      - strace
+
+matrix:
+  include:
+    - arch: arm64
+
+language: generic
+script:
+  - python3 test.py
